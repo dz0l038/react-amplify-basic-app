@@ -34,6 +34,7 @@ npm install --save react-router-dom
 
 npm install aws-amplify-react
 npm install @aws-amplify/api @aws-amplify/pubsub
+npm install aws-amplify
 
 npm install node-sass
 ```
