@@ -19,7 +19,7 @@ Once it is done init your project:
 amplify init
 ```
 
-Include react-router-dom amplify and material-ui
+Include react-router-dom amplify, material-ui and sass
 
 https://material-ui.com
 
@@ -34,6 +34,8 @@ npm install --save react-router-dom
 
 npm install aws-amplify-react
 npm install @aws-amplify/api @aws-amplify/pubsub
+
+npm install node-sass
 ```
 
 Add in your public/index.html to have Roboto
