@@ -20,8 +20,12 @@ amplify init
 ```
 
 Include react-router-dom amplify and material-ui
+
 https://material-ui.com
+
 https://www.npmjs.com/package/react-router-dom
+
+https://aws-amplify.github.io/
 ```
 npm install @material-ui/core
 npm install @material-ui/icons
@@ -40,4 +44,9 @@ Add in your public/index.html to have Roboto
 Add auth to your project
 ```
 amplify add auth
+```
+
+Push
+```
+amplify push
 ```
