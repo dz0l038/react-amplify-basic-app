@@ -44,12 +44,40 @@ Add in your public/index.html to have Roboto
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 ```
 
-Add auth to your project
+Add auth to your project with email login
 ```
 amplify add auth
 ```
+
+Copy the `struct` forlder in `src`
 
 Push
 ```
 amplify push
 ```
+
+
+
+Replace App.js by
+```
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+import Routing from './struct/pages/Routing';
+
+Amplify.configure(awsconfig);
+
+function App() {
+  return (
+    <Router><Routing></Routing></Router>
+  );
+}
+
+export default App;
+```
+
+run `npm start`
+You should now have a running app with a basic lateral navigation with one page needing a login
